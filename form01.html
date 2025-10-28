@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 30px;
+        color: #000;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    form {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    /* Field labels */
+    label {
+        display: inline-block;
+        width: 120px;  /* Fixed width for alignment */
+        font-weight: bold;
+        vertical-align: top;
+    }
+
+    /* Inputs, textarea, select */
+    input, textarea, select {
+        width: 250px;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    /* Radio buttons inline */
+    .gender-group input[type="radio"] {
+        width: auto;
+        margin-right: 5px;
+    }
+
+    /* Checkbox inline */
+    .language-group input[type="checkbox"] {
+        width: auto;
+        margin-right: 5px;
+    }
+
+    /* Fieldset styling */
+    fieldset {
+        border: 1px solid #ccc; /* visible border */
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+    }
+
+    legend {
+        font-weight: bold;
+        padding: 0 5px;
+    }
+
+    /* Submit buttons container */
+    .button-group {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    input[type="submit"] {
+        width: 48%;
+        padding: 8px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form>
+    <label>Name:</label>
+    <input type="text" name="name"><br>
+
+    <label>Password:</label>
+    <input type="password" name="password"><br>
+
+    <label>Mobile:</label>
+    <input type="number" name="mobile"><br>
+
+    <label>Address:</label>
+    <textarea name="address" rows="1"></textarea><br>
+
+    <label>DOB:</label>
+    <input type="date" name="dob"><br>
+
+    <label>Email:</label>
+    <input type="email" name="email"><br>
+
+    <label>Gender:</label>
+    <span class="gender-group">
+        <input type="radio" name="gender" value="male" checked> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="others"> Other
+    </span>
+    <br>
+
+    <fieldset>
+        <legend>Languages Known:</legend>
+        <span class="language-group">
+            <input type="checkbox" name="language" value="english"> English <br>
+            <input type="checkbox" name="language" value="malayalam"> Malayalam <br>
+            <input type="checkbox" name="language" value="hindi"> Hindi 
+        </span>
+    </fieldset>
+
+    <label>Nationality:</label>
+    <select name="nationality">
+        <option value="indian">Indian</option>
+        <option value="american">American</option>
+        <option value="british">British</option>
+        <option value="other">Other</option>
+    </select><br>
+
+    <div class="button-group">
+        <input type="submit" value="Submit">
+        <input type="submit" value="Cancel">
+    </div>
+</form>
+
+</body>
+</html>
