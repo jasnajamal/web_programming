@@ -1,0 +1,25 @@
+/* External CSS */
+p {
+    font-family: 'Verdana', sans-serif;
+    color: blue;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+ul li {
+    list-style-type: square;
+}
+
+ol li {
+    list-style-type: decimal;
+}
+
+dl dt {
+    font-weight: bold;
+}
+
+dl dd {
+    margin-left: 20px;
+}
